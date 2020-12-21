@@ -1,0 +1,37 @@
+{
+  "name": "@amplify/gateway",
+  "version": "0.0.1",
+  "main": "dist/src/Faucet.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --outDir dist",
+    "start": "npm run build && node dist/src/Amplify.js",
+    "test": "npm run build && mocha dist/test/*.js",
+    "lint": "eslint src/**/*.ts --fix"
+  },
+  "dependencies": {
+    "arweave": "^1.9.1",
+    "body-parser": "^1.19.0",
+    "colors": "^1.4.0",
+    "commander": "^6.2.0",
+    "community-js": "^1.1.14",
+    "express": "^4.17.1",
+    "smartweave": "^0.4.21",
+    "superagent": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/express": "^4.17.8",
+    "@types/mocha": "^8.0.3",
+    "@types/node": "^14.14.6",
+    "@typescript-eslint/eslint-plugin": "^4.12.0",
+    "@typescript-eslint/parser": "^4.12.0",
+    "eslint": "^7.17.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "mocha": "^8.2.0",
+    "typescript": "^4.0.5"
+  }
+}
